@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Backend.Server.Controladores.LimitesController">
+
+    <VBox spacing="15" layoutX="30" layoutY="20">
+
+        <Label text="Gestión de Límites del Servidor" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+        <GridPane hgap="15" vgap="10">
+
+            <Label text="Máx. conexiones por usuario:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxConexionesUsuario" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Máx. conexiones totales:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxConexionesTotales" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Máx. archivos por usuario:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxArchivosUsuario" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Tamaño máximo archivo (bytes):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxTamanoArchivo" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Máx. archivos enviados/día:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxArchivosDia" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Label text="Máx. audio (bytes):" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxAudioBytes" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+
+            <Label text="Duración máx. audio (seg):" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxAudioSegundos" GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+
+            <Label text="Máx. mensajes por minuto:" GridPane.rowIndex="7" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtMaxMensajesMinuto" GridPane.rowIndex="7" GridPane.columnIndex="1"/>
+        </GridPane>
+
+        <Button text="Guardar Cambios"
+                fx:id="btnGuardar"
+                onAction="#guardarCambios"
+                style="-fx-font-weight: bold; -fx-padding: 10 20;"/>
+    </VBox>
+
+</AnchorPane>

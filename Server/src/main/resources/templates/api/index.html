@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>API REST – Consulta</title>
+
+    <!-- Bootstrap básico -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="/css/api-rest.css">
+</head>
+
+<body class="api-body">
+
+<div class="api-container">
+
+    <h1 class="api-title">
+        <i class="bi bi-hdd-network"></i> API REST – Consulta de Usuarios
+    </h1>
+
+    <!-- Selector de usuario -->
+    <div class="panel mb-4">
+        <div class="panel-body">
+
+            <label class="form-label fw-bold">Seleccione un usuario:</label>
+
+            <select id="usuarioSelect" class="select-cyber mb-3">
+                <option value="" disabled selected>Seleccione...</option>
+                <option th:each="u : ${usuarios}"
+                        th:value="${u.id}"
+                        th:text="${u.username}">
+                </option>
+            </select>
+
+            <div class="button-group">
+                <button class="btn-cyber bg-blue" onclick="cargar('info')">
+                    <i class="bi bi-person-vcard"></i> Información
+                </button>
+
+                <button class="btn-cyber bg-green" onclick="cargar('enviados')">
+                    <i class="bi bi-send-check"></i> Enviados
+                </button>
+
+                <button class="btn-cyber bg-yellow" onclick="cargar('recibidos')">
+                    <i class="bi bi-inbox-fill"></i> Recibidos
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Resultados -->
+    <div id="resultado"></div>
+
+</div>
+
+<script>
+
+    function cargar(tipo) {
+
+        const id = document.getElementById("usuarioSelect").value;
+
+        if (!id) return alert("Seleccione un usuario primero");
+
+        fetch(`/api/usuarios/${id}/${tipo}`)
+            .then(r => {
+                if (!r.ok) throw new Error("Error en el API");
+                return r.json();
+            })
+            .then(data => mostrarResultados(tipo, data))
+            .catch(e => mostrarError(e.message));
+    }
+
+    function mostrarError(msg) {
+        document.getElementById("resultado").innerHTML = `
+            <div class="panel-error">
+                <i class="bi bi-exclamation-triangle-fill"></i> ${msg}
+            </div>`;
+    }
+
+    /* ========================
+       INFO DEL USUARIO
+    ========================= */
+    function mostrarResultados(tipo, data) {
+
+        if (tipo === "info") {
+
+            document.getElementById("resultado").innerHTML = `
+                <div class="card-result">
+
+                    <div class="card-header-custom bg-blue">
+                        <i class="bi bi-person"></i> Información del Usuario
+                    </div>
+
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>Email:</b> ${data.email}</li>
+                            <li class="list-group-item"><b>Estado:</b> ${data.estado}</li>
+                            <li class="list-group-item"><b>Conectado:</b> ${data.conectado}</li>
+                            <li class="list-group-item"><b>Fecha registro:</b> ${data.fechaRegistro}</li>
+                            <li class="list-group-item"><b>Última conexión:</b> ${data.ultimaConexion}</li>
+                            <li class="list-group-item"><b>Mensajes enviados:</b> ${data.mensajesEnviados}</li>
+                            <li class="list-group-item"><b>Mensajes recibidos:</b> ${data.mensajesRecibidos}</li>
+                        </ul>
+                    </div>
+
+                </div>
+            `;
+            return;
+        }
+
+        /* ========================
+           MENSAJES ENVIADOS/RECIBIDOS
+        ========================= */
+
+        let titulo = tipo === "enviados"
+            ? "Mensajes Enviados"
+            : "Mensajes Recibidos";
+
+        let filas = data.map(m => `
+            <tr>
+                <td>${m.remoto}</td>
+                <td>${m.ipOrigen}</td>
+                <td>${m.ipDestino}</td>
+                <td class="texto-msg">${m.contenido ?? "(sin texto)"}</td>
+                <td>${m.fechaHora}</td>
+            </tr>
+        `).join("");
+
+        document.getElementById("resultado").innerHTML = `
+            <div class="card-result">
+
+                <div class="card-header-custom bg-purple">
+                    <i class="bi bi-envelope"></i> ${titulo}
+                </div>
+
+                <div class="card-body">
+                    <table class="table table-striped table-hover table-dark-custom">
+                        <thead>
+                            <tr>
+                                <th>Usuario Remoto</th>
+                                <th>IP Origen</th>
+                                <th>IP Destino</th>
+                                <th>Contenido</th>
+                                <th>Fecha/Hora</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            ${filas}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        `;
+    }
+
+</script>
+
+</body>
+</html>

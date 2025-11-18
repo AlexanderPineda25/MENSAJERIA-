@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Backend.Server.Controladores.UsuariosPendientesController"
+      spacing="10" style="-fx-padding: 10;">
+
+    <Label text="Usuarios Pendientes de Aprobación" style="-fx-font-size: 16; -fx-font-weight: bold;"/>
+
+    <TableView fx:id="tablaPendientes" prefHeight="400">
+        <columns>
+            <TableColumn fx:id="colUsername" text="Usuario" prefWidth="150"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="250"/>
+            <TableColumn fx:id="colAccion" text="Acción" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+    <Label text="Actualizando cada 5 segundos..." style="-fx-text-fill: gray;"/>
+</VBox>

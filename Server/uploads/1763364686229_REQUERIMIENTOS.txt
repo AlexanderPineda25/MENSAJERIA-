@@ -1,0 +1,133 @@
+📋 Lista completa de requerimientos del proyecto
+🎯 REQUERIMIENTOS PRELIMINARES
+1. Aplicación Cliente-Servidor
+
+Aplicación cliente-servidor para el intercambio de información entre usuarios
+Los usuarios podrán intercambiar información basada en mensajes de texto y archivos (texto o binarios)
+
+2. Concurrencia
+
+El servidor podrá recibir varias conexiones simultáneas para el procesamiento de mensajes
+Deberán aplicar el concepto de programación concurrente con hilos para procesar las conexiones
+
+3. Base de Datos
+
+Toda la información del servidor será almacenada en una base de datos relacional que podrá ser: MySQL, PostgreSQL u Oracle
+
+4. Gestión de Usuarios
+
+Los usuarios se deben crear a través de la aplicación cliente
+Su aceptación se dará desde el servidor
+Solo podrán conectarse después de ser aceptados
+
+5. Conexiones Múltiples
+
+Un usuario podrá conectarse de forma simultánea al servidor desde su propia PC u otra
+
+6. Registro de Acciones del Servidor
+
+El servidor deberá mostrar por consola todas las acciones que está ejecutando
+El servidor deberá almacenar en un archivo plano todas las acciones que está ejecutando
+
+7. Restricciones
+
+El servidor restringe el número de conexiones por usuario
+El servidor restringe el número de archivos enviado por un usuario
+
+8. Protocolo de Comunicación
+
+La conexión entre la aplicación del servidor y los clientes se realizará a través del protocolo TCP-IP
+
+9. Descarga de Archivos
+
+Los usuarios pueden descargar los archivos que les fueron enviados
+
+
+💻 APLICACIÓN CLIENTE (Escritorio)
+10. Formularios Maestro-Detalle
+
+La aplicación cliente implementará formularios maestro-detalle para mostrar la información asociada al usuario
+
+
+🌐 APLICACIÓN WEB (MVC)
+La aplicación de mensajería tendrá una aplicación web (MVC) para mostrar la siguiente información:
+11. Listado de Usuarios
+
+Listado de usuarios registrados
+
+12. Mensajes por Tipo
+
+Mensajes de los usuarios, clasificados por el tipo de mensaje
+Ver detalle del mensaje, incluye descargar archivos
+
+13. Informes
+13.1 Usuario con más mensajes enviados
+
+Mostrar cantidad de mensajes
+
+13.2 Archivos enviados
+
+Listar por su tamaño y mostrar propietario
+
+13.3 Listado de usuarios conectados
+Mostrar la información asociada:
+
+IP del usuario
+Hora de conexión
+Cantidad de mensajes en ese instante
+
+13.4 Listado de usuarios desconectados
+Mostrar la información asociada:
+
+IP del usuario
+Hora de conexión
+Hora de desconexión
+Cantidad de mensajes enviados
+
+
+🔌 API REST
+14. Servicio Web con API REST
+Implementar un servicio web con API REST para mostrar la información asociada a los usuarios. Los servicios definidos son los siguientes:
+14.1 Información completa del usuario
+
+Nombre de usuario
+Cantidad de mensajes enviados
+Cantidad de mensajes recibidos
+Fecha y hora de última conexión
+Estado (conectado - desconectado)
+
+14.2 Listado de mensajes enviados
+
+IP del usuario
+IP del usuario remoto
+Fecha
+Hora
+
+14.3 Listado de mensajes recibidos
+
+IP del usuario
+IP del usuario remoto
+Fecha
+Hora
+
+
+🛠️ RESTRICCIONES Y ENTORNO DE DESARROLLO
+15. Componentes de la Aplicación
+
+Aplicación de escritorio: Servidor
+Aplicación de escritorio: Cliente
+Aplicación web con MVC
+API REST
+
+16. Patrones de Diseño
+Aplicar Patrones de diseño:
+
+Builder
+Object Pool
+Entre otros
+
+17. Principios SOLID
+Aplicar Principios SOLID
+18. Entorno de Desarrollo
+
+Java - Spring Boot o C# - .Net Core

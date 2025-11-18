@@ -1,0 +1,45 @@
+.bg-success {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+}
+
+.bg-info {
+    -fx-background-color: #17a2b8;
+    -fx-text-fill: white;
+}
+
+.bg-warning {
+    -fx-background-color: #ffc107;
+    -fx-text-fill: black;
+}
+
+.bg-danger {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+}
+
+.bg-primary {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+.bg-dark {
+    -fx-background-color: #343a40;
+}
+
+.bg-black {
+    -fx-background-color: #1e1e1e;
+}
+
+.text-monospace {
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 12px;
+}
+
+.text-light {
+    -fx-text-fill: #f8f9fa;
+}
+
+.panel-primary {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a252f);
+}

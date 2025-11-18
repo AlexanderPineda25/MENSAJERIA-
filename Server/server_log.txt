@@ -1,0 +1,329 @@
+[2025-11-11 23:54:50] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-11 23:55:47] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-11 23:55:48] ❌ Error manejando cliente: frontend.client.Modelos.Mensaje
+[2025-11-11 23:56:58] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-11 23:56:58] ❌ Error manejando cliente: frontend.client.Modelos.Mensaje
+[2025-11-12 00:04:01] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-12 00:04:13] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:04:14] 🔐 Intento de login de: aaaa
+[2025-11-12 00:04:14] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:05:02] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:05:03] ❌ Error creando usuario: Validation failed for classes [Backend.Server.Entidades.Usuario] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='size must be between 8 and 120', propertyPath=password, rootBeanClass=class Backend.Server.Entidades.Usuario, messageTemplate='{jakarta.validation.constraints.Size.message}'}
+]
+[2025-11-12 00:05:03] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:05:18] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:05:18] ❌ Error creando usuario: Validation failed for classes [Backend.Server.Entidades.Usuario] during persist time for groups [jakarta.validation.groups.Default, ]
+List of constraint violations:[
+	ConstraintViolationImpl{interpolatedMessage='size must be between 8 and 120', propertyPath=password, rootBeanClass=class Backend.Server.Entidades.Usuario, messageTemplate='{jakarta.validation.constraints.Size.message}'}
+]
+[2025-11-12 00:05:18] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:06:36] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:06:36] 🆕 Usuario registrado: Alexander
+[2025-11-12 00:06:49] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:07:06] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:07:06] 🔐 Intento de login de: Alexander
+[2025-11-12 00:07:06] ⚠️ Tipo de mensaje no reconocido: LISTAR_USUARIOS
+[2025-11-12 00:07:47] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:08:38] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:08:38] 🆕 Usuario registrado: sofia
+[2025-11-12 00:08:41] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:09:01] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:09:02] 🔐 Intento de login de: sofia
+[2025-11-12 00:09:02] ⚠️ Tipo de mensaje no reconocido: LISTAR_USUARIOS
+[2025-11-12 00:09:38] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:09:39] 🔐 Intento de login de: Alexander
+[2025-11-12 00:09:39] ⚠️ Tipo de mensaje no reconocido: LISTAR_USUARIOS
+[2025-11-12 00:10:31] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:10:35] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:36:59] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-12 00:37:08] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:37:09] 🔐 Intento de login de: Alexander
+[2025-11-12 00:37:09] 📤 Lista de usuarios aceptados enviada a null
+[2025-11-12 00:48:16] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-12 00:48:42] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:48:42] 🔐 Intento de login de: Alexander
+[2025-11-12 00:48:42] 📤 Lista de usuarios aceptados enviada a null
+[2025-11-12 00:51:52] ❌ Error manejando cliente: Connection reset
+[2025-11-12 00:52:25] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:52:26] 🔐 Intento de login de: alex
+[2025-11-12 00:52:26] Cliente desconectado: 127.0.0.1
+[2025-11-12 00:52:35] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 00:52:35] 🔐 Intento de login de: Alexander
+[2025-11-12 00:52:35] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-12 01:03:58] ❌ Error manejando cliente: Connection reset
+[2025-11-12 01:04:18] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 01:04:19] 🔐 Intento de login de: Alexander
+[2025-11-12 01:04:19] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-12 01:08:43] Cliente desconectado: 127.0.0.1
+[2025-11-12 01:17:07] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 01:17:07] 🔐 Intento de login de: Alexander
+[2025-11-12 01:17:07] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-12 01:17:14] ⚠️ Tipo de mensaje no reconocido: MENSAJE_TEXTO
+[2025-11-12 01:17:23] ⚠️ Tipo de mensaje no reconocido: MENSAJE_ARCHIVO
+[2025-11-12 01:17:36] ⚠️ Tipo de mensaje no reconocido: MENSAJE_TEXTO
+[2025-11-12 01:17:41] ⚠️ Tipo de mensaje no reconocido: MENSAJE_TEXTO
+[2025-11-12 01:17:54] Cliente desconectado: 127.0.0.1
+[2025-11-12 01:18:22] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-12 01:18:23] 🔐 Intento de login de: sofia
+[2025-11-12 01:18:23] 📤 Lista de usuarios aceptados enviada a sofia
+[2025-11-16 19:58:02] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 19:59:15] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 19:59:16] 🔐 Intento de login de: sofia
+[2025-11-16 19:59:16] 📤 Lista de usuarios aceptados enviada a sofia
+[2025-11-16 19:59:38] ⚠️ Tipo de mensaje no reconocido: MENSAJE_TEXTO
+[2025-11-16 19:59:45] ⚠️ Tipo de mensaje no reconocido: MENSAJE_TEXTO
+[2025-11-16 19:59:54] ⚠️ Tipo de mensaje no reconocido: MENSAJE_ARCHIVO
+[2025-11-16 20:01:59] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:02:22] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:02:23] 🔐 Intento de login de: alexander
+[2025-11-16 20:02:23] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:02:27] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:02:28] 🔐 Intento de login de: Alexander
+[2025-11-16 20:02:28] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:02:33] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:02:33] 🔐 Intento de login de: Alexander
+[2025-11-16 20:02:33] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 20:07:26] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:21:07] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 20:21:09] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:21:09] 🔐 Intento de login de: Alexander
+[2025-11-16 20:21:09] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 20:21:57] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:22:16] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:22:17] 🔐 Intento de login de: sofia
+[2025-11-16 20:22:17] 📤 Lista de usuarios aceptados enviada a sofia
+[2025-11-16 20:31:35] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 20:31:49] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:31:50] 🔐 Intento de login de: sofia
+[2025-11-16 20:31:50] Error en login: Could not initialize proxy [Backend.Server.Entidades.Usuario#1] - no session
+[2025-11-16 20:31:50] 📤 Lista de usuarios aceptados enviada a sofia
+[2025-11-16 20:33:03] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:33:21] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:33:22] 🔐 Intento de login de: Alexander
+[2025-11-16 20:33:22] Error en login: Could not initialize proxy [Backend.Server.Entidades.Usuario#2] - no session
+[2025-11-16 20:33:22] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 20:44:37] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 20:44:45] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:44:46] 🔐 Intento de login de: Alexander
+[2025-11-16 20:44:46] Mensajes pendientes enviados a Alexander: 0
+[2025-11-16 20:44:46] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 20:45:59] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:46:09] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:46:10] 🔐 Intento de login de: sofia
+[2025-11-16 20:46:10] Cliente desconectado: 127.0.0.1
+[2025-11-16 20:46:14] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 20:46:15] 🔐 Intento de login de: sofia
+[2025-11-16 20:46:15] Error en login: Could not initialize proxy [Backend.Server.Entidades.Usuario#1] - no session
+[2025-11-16 20:46:15] 📤 Lista de usuarios aceptados enviada a sofia
+[2025-11-16 21:00:11] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 21:00:44] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:00:44] 🔐 Intento de login de: sofia
+[2025-11-16 21:00:44] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:00:50] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:00:51] 🔐 Intento de login de: sofia
+[2025-11-16 21:00:51] Error en login: Could not initialize proxy [Backend.Server.Entidades.Usuario#1] - no session
+[2025-11-16 21:00:51] 📤 Lista de usuarios aceptados enviada a sofia
+[2025-11-16 21:01:42] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:01:57] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:01:57] 🔐 Intento de login de: Alexander
+[2025-11-16 21:01:57] Error en login: Could not initialize proxy [Backend.Server.Entidades.Usuario#1] - no session
+[2025-11-16 21:01:57] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 21:10:00] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 21:10:10] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:10:11] 🔐 Intento de login de: sofia
+[2025-11-16 21:10:11] Historial enviado a sofia: 27 mensajes
+[2025-11-16 21:10:11] 📤 Lista de usuarios aceptados enviada a sofia
+[2025-11-16 21:11:06] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:11:25] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:11:25] 🔐 Intento de login de: Alexander
+[2025-11-16 21:11:25] Historial enviado a Alexander: 29 mensajes
+[2025-11-16 21:11:25] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 21:12:29] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:12:47] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:12:47] 🔐 Intento de login de: Alexander
+[2025-11-16 21:12:47] Historial enviado a Alexander: 29 mensajes
+[2025-11-16 21:12:47] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 21:13:07] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:13:48] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:13:48] 🆕 Usuario registrado: rata
+[2025-11-16 21:13:51] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:14:22] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:14:23] 🔐 Intento de login de: rata
+[2025-11-16 21:14:23] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:14:29] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:14:29] 🔐 Intento de login de: rata
+[2025-11-16 21:14:29] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:18:26] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 21:18:40] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:18:40] 🔐 Intento de login de: Alexander
+[2025-11-16 21:18:40] Historial enviado a Alexander: 29 mensajes
+[2025-11-16 21:18:40] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 21:19:59] Cliente desconectado: 127.0.0.1
+[2025-11-16 21:20:13] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 21:20:14] 🔐 Intento de login de: Alexander
+[2025-11-16 21:20:14] Historial enviado a Alexander: 29 mensajes
+[2025-11-16 21:20:14] 📤 Lista de usuarios aceptados enviada a Alexander
+[2025-11-16 21:20:17] Cliente desconectado: 127.0.0.1
+[2025-11-16 23:07:14] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 23:16:58] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 23:17:00] 🛑 Servidor detenido correctamente.
+[2025-11-16 23:17:01] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 23:17:34] 🛑 Servidor detenido correctamente.
+[2025-11-16 23:23:13] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-16 23:56:22] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 23:56:23] ❌ Error en login: JDBC exception executing SQL [select u1_0.id,u1_0.activo,u1_0.conectado,u1_0.email,u1_0.estado,u1_0.fechaRegistro,u1_0.fechaUltimaConexion,u1_0.password,u1_0.username from Usuario u1_0 where u1_0.username=?] [Table 'mensajeria_db.usuario' doesn't exist] [n/a]; SQL [n/a]
+[2025-11-16 23:56:23] Cliente desconectado: 127.0.0.1
+[2025-11-16 23:57:01] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 23:57:01] ❌ Error creando usuario: could not execute statement [Table 'mensajeria_db.usuario' doesn't exist] [insert into Usuario (activo,conectado,email,estado,fechaRegistro,fechaUltimaConexion,password,username) values (?,?,?,?,?,?,?,?)]; SQL [insert into Usuario (activo,conectado,email,estado,fechaRegistro,fechaUltimaConexion,password,username) values (?,?,?,?,?,?,?,?)]
+[2025-11-16 23:57:01] Cliente desconectado: 127.0.0.1
+[2025-11-16 23:59:39] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-16 23:59:40] ❌ Error creando usuario: could not execute statement [Table 'mensajeria_db.usuario' doesn't exist] [insert into Usuario (activo,conectado,email,estado,fechaRegistro,fechaUltimaConexion,password,username) values (?,?,?,?,?,?,?,?)]; SQL [insert into Usuario (activo,conectado,email,estado,fechaRegistro,fechaUltimaConexion,password,username) values (?,?,?,?,?,?,?,?)]
+[2025-11-16 23:59:40] Cliente desconectado: 127.0.0.1
+[2025-11-17 00:20:06] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 00:21:13] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 00:21:13] Cliente desconectado: 127.0.0.1
+[2025-11-17 00:21:40] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 00:21:41] 🆕 Usuario registrado: alex
+[2025-11-17 00:21:43] Cliente desconectado: 127.0.0.1
+[2025-11-17 00:22:04] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 00:22:05] Cliente desconectado: 127.0.0.1
+[2025-11-17 00:22:36] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 00:22:36] Cliente desconectado: 127.0.0.1
+[2025-11-17 00:22:40] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 00:22:41] Cliente desconectado: 127.0.0.1
+[2025-11-17 00:28:13] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 00:39:56] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 01:33:36] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 01:34:10] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:34:10] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:34:49] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:34:49] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:35:36] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:35:36] 🆕 Usuario registrado: sofia
+[2025-11-17 01:35:40] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:35:56] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:35:56] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:45:58] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 01:46:21] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:46:22] 🆕 Usuario registrado: alex
+[2025-11-17 01:46:23] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:46:46] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:46:46] 🆕 Usuario registrado: sofia
+[2025-11-17 01:46:49] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:47:15] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:48:44] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:48:44] 🔴 Sesión cerrada: 60a8a811-8d6e-48fb-a7be-a950f1e6e106
+[2025-11-17 01:49:40] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:49:40] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:49:44] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 01:50:15] Cliente desconectado: 127.0.0.1
+[2025-11-17 01:50:15] 🔴 Sesión cerrada: 85b8b094-a758-4dea-9b67-9bb5d7925a60
+[2025-11-17 02:19:07] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 02:19:12] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:19:14] ❌ Error manejando cliente: Could not initialize proxy [Backend.Server.Entidades.Usuario#3] - no session
+[2025-11-17 02:19:14] 🔴 Sesión cerrada: d86b1593-b148-46b4-a020-fc1f6dcde4fe
+[2025-11-17 02:23:03] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 02:23:09] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:23:49] Cliente desconectado: 127.0.0.1
+[2025-11-17 02:23:49] 🔴 Sesión cerrada: cd258a4b-bdd2-4cc9-accd-72692b1ae616
+[2025-11-17 02:24:52] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:25:19] Cliente desconectado: 127.0.0.1
+[2025-11-17 02:25:19] 🔴 Sesión cerrada: f9f5d919-f413-43db-9fb3-c8e7e2e746dc
+[2025-11-17 02:25:34] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:30:40] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 02:31:13] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:33:46] ❌ Error manejando cliente: Connection reset
+[2025-11-17 02:33:46] 🔴 Sesión cerrada: c36ce296-e792-47f9-abe5-d3dc2743c071
+[2025-11-17 02:34:17] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:34:46] Cliente desconectado: 127.0.0.1
+[2025-11-17 02:34:46] 🔴 Sesión cerrada: 6aa83b36-b134-44b9-88d2-35989b66fc10
+[2025-11-17 02:50:02] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 02:50:20] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:50:20] Cliente desconectado: 127.0.0.1
+[2025-11-17 02:50:23] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:55:09] ❌ Error manejando cliente: Connection reset
+[2025-11-17 02:55:09] 🔴 Sesión cerrada: 23f4f224-d524-4faa-aec3-d6db6b43ef50
+[2025-11-17 02:55:36] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 02:56:10] ❌ Error manejando cliente: Connection reset
+[2025-11-17 02:56:10] 🔴 Sesión cerrada: 3624e632-c4bd-4e24-9ca5-a39e116ea3ff
+[2025-11-17 03:01:38] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:01:38] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:01:43] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:01:44] ❌ Error en login: Límite de conexiones por usuario alcanzado
+[2025-11-17 03:01:44] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:01:44] 🔴 Sesión cerrada: a8e9fff8-605f-4168-8d20-c34a9de6296f
+[2025-11-17 03:01:48] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:01:48] ❌ Error en login: Límite de conexiones por usuario alcanzado
+[2025-11-17 03:01:48] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:01:48] 🔴 Sesión cerrada: 39065da3-bfe5-4356-86e9-1ff461231ec2
+[2025-11-17 03:02:07] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:02:35] ❌ Error manejando cliente: Connection reset
+[2025-11-17 03:02:35] 🔴 Sesión cerrada: e07b350b-2e22-4ab0-ad18-adcf046d1885
+[2025-11-17 03:06:21] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:06:26] ❌ Error manejando cliente: Connection reset
+[2025-11-17 03:06:26] 🔴 Sesión cerrada: 289996e4-54b9-4782-a083-1af522245988
+[2025-11-17 03:13:05] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:13:05] ❌ Error en login: Límite de conexiones por usuario alcanzado
+[2025-11-17 03:13:05] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:13:05] 🔴 Sesión cerrada: 9b5e1d2c-9345-465e-9797-f1383e9304fc
+[2025-11-17 03:13:18] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:13:18] ❌ Error en login: Límite de conexiones por usuario alcanzado
+[2025-11-17 03:13:18] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:13:18] 🔴 Sesión cerrada: 24e93c64-f5d8-43d9-a3df-c4ce831eed25
+[2025-11-17 03:13:25] 🛑 Servidor detenido correctamente.
+[2025-11-17 03:13:26] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 03:13:30] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:15:44] 🛑 Servidor detenido correctamente.
+[2025-11-17 03:16:22] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 03:16:37] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:16:38] ❌ Error en login: Límite de conexiones por usuario alcanzado
+[2025-11-17 03:16:38] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:16:38] 🔴 Sesión cerrada: 844ec690-48fe-4879-b5e6-88ff13cae9e2
+[2025-11-17 03:16:54] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:16:54] ❌ Error en login: Límite de conexiones por usuario alcanzado
+[2025-11-17 03:16:54] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:16:54] 🔴 Sesión cerrada: f49cf317-c98b-445c-ac9a-9d463c4b4b6f
+[2025-11-17 03:17:13] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:18:31] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:18:31] 🔴 Sesión cerrada: 900e1b2a-3139-4ba5-846c-f28b07add197
+[2025-11-17 03:19:17] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:20:00] ❌ Error manejando cliente: Connection reset
+[2025-11-17 03:20:00] 🔴 Sesión cerrada: 5acb347e-85fe-4f70-9c00-54df99541071
+[2025-11-17 03:20:09] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:20:09] Cliente desconectado: 127.0.0.1
+[2025-11-17 03:20:13] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:44:01] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 03:44:14] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:44:14] 🟢 Registrada conexión para usuario: alex
+[2025-11-17 03:45:21] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:45:21] 🟢 Registrada conexión para usuario: sofia
+[2025-11-17 03:47:43] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:47:44] 🟢 Registrada conexión para usuario: alex
+[2025-11-17 03:57:44] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 03:57:58] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:57:58] 🟢 Registrada conexión para usuario: alex
+[2025-11-17 03:59:53] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 03:59:53] 🟢 Registrada conexión para usuario: sofia
+[2025-11-17 04:07:58] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 04:08:11] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 04:08:11] 🟢 Registrada conexión para usuario: alex
+[2025-11-17 04:17:38] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 04:17:54] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 04:17:54] 🟢 Registrada conexión para usuario: sofia
+[2025-11-17 04:19:01] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 04:19:01] 🟢 Registrada conexión para usuario: alex
+[2025-11-17 04:56:09] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 04:56:21] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 04:56:22] 🟢 Conexión registrada para usuario: alex
+[2025-11-17 04:57:17] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 04:57:17] 🟢 Conexión registrada para usuario: sofia
+[2025-11-17 05:02:47] 🔌 Nueva conexión desde 127.0.0.1
+[2025-11-17 05:02:48] 🟢 Conexión registrada para usuario: alex
+[2025-11-17 05:53:26] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 05:58:10] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 06:03:27] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 06:06:36] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 06:13:39] ✅ Servidor TCP iniciado en el puerto 5000
+[2025-11-17 07:17:36] ✅ Servidor TCP iniciado en el puerto 5000

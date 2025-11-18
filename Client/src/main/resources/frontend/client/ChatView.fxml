@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="frontend.client.Controllers.ChatController"
+            style="-fx-background-color: #ecf0f1;">
+
+    <top>
+        <VBox style="-fx-background-color: #2c3e50; -fx-padding: 15;">
+            <HBox alignment="CENTER_LEFT" spacing="20">
+
+                <Label fx:id="lblUsuario" text="Usuario: "
+                       textFill="white" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+                <Label fx:id="lblIP" text="IP:"
+                       textFill="#3498db" style="-fx-font-size: 14px;"/>
+
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <Button fx:id="btnDesconectar"
+                        text="Desconectar"
+                        onAction="#desconectar"
+                        style="-fx-background-color: #e74c3c; -fx-text-fill: white;
+                               -fx-background-radius: 5; -fx-font-weight: bold;"/>
+
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <HBox spacing="10">
+            <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+
+            <VBox spacing="10"
+                  style="-fx-background-color: white; -fx-background-radius: 5; -fx-padding: 10;"
+                  prefWidth="200">
+
+                <Label text="Usuarios Conectados"
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+
+                <Separator/>
+
+                <ListView fx:id="listUsuarios" VBox.vgrow="ALWAYS"
+                          style="-fx-background-color: #ecf0f1;">
+                    <placeholder>
+                        <Label text="No hay usuarios conectados" style="-fx-text-fill: #7f8c8d;"/>
+                    </placeholder>
+                </ListView>
+
+            </VBox>
+
+            <VBox spacing="10" HBox.hgrow="ALWAYS"
+                  style="-fx-background-color: white; -fx-background-radius: 5; -fx-padding: 10;">
+
+                <Label text="Mensajes"
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+
+                <Separator/>
+
+                <ListView fx:id="listMensajes"
+                          VBox.vgrow="ALWAYS"
+                          style="-fx-background-color: #f8f9fa; -fx-padding: 10;"/>
+
+                <HBox spacing="10" alignment="CENTER_LEFT">
+
+                    <TextField fx:id="txtMensaje"
+                               promptText="Escribe tu mensaje..."
+                               HBox.hgrow="ALWAYS"
+                               style="-fx-background-color: #ecf0f1;
+                                      -fx-background-radius: 20; -fx-padding: 8;"/>
+
+                    <Button fx:id="btnArchivo"
+                            text="📎 Archivo"
+                            onAction="#enviarArchivo"
+                            style="-fx-background-color: #95a5a6;
+                                   -fx-text-fill: white; -fx-background-radius: 20;
+                                   -fx-padding: 8 15;"/>
+
+                    <Button fx:id="btnEnviar"
+                            text="Enviar"
+                            onAction="#enviarMensaje"
+                            defaultButton="true"
+                            style="-fx-background-color: #3498db;
+                                   -fx-text-fill: white; -fx-background-radius: 20;
+                                   -fx-padding: 8 20; -fx-font-weight: bold;"/>
+
+                </HBox>
+
+            </VBox>
+
+        </HBox>
+    </center>
+
+</BorderPane>

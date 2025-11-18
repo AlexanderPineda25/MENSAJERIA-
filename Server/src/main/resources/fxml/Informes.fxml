@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Backend.Server.Controladores.InformesDesktopController"
+      spacing="15"
+      style="-fx-padding: 15;">
+
+    <Label text="Informes del Sistema"
+           style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <GridPane hgap="20" vgap="10">
+        <columnConstraints>
+            <ColumnConstraints hgrow="ALWAYS"/>  <!-- CORREGIDO -->
+            <ColumnConstraints hgrow="ALWAYS"/>  <!-- CORREGIDO -->
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="SOMETIMES"/>  <!-- CORREGIDO -->
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+            <RowConstraints vgrow="SOMETIMES"/>
+        </rowConstraints>
+
+        <!-- FILA 0 -->
+        <Label text="Usuario más activo:"
+               GridPane.rowIndex="0" GridPane.columnIndex="0"
+               style="-fx-font-weight: bold;"/>
+        <Label fx:id="lblUsuarioActivo"
+               GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <!-- FILA 1 -->
+        <Label text="Archivos más grandes:"
+               GridPane.rowIndex="1" GridPane.columnIndex="0"
+               style="-fx-font-weight: bold;"/>
+        <Label fx:id="lblArchivoGrande"
+               GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <!-- FILA 2 -->
+        <Label text="Conexiones activas:"
+               GridPane.rowIndex="2" GridPane.columnIndex="0"
+               style="-fx-font-weight: bold;"/>
+        <Label fx:id="lblConexiones"
+               GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <!-- FILA 3 -->
+        <Label text="Última acción:"
+               GridPane.rowIndex="3" GridPane.columnIndex="0"
+               style="-fx-font-weight: bold;"/>
+        <Label fx:id="lblUltimaAccion"
+               GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <Button text="Actualizar Informes" onAction="#actualizarInformes"/>
+</VBox>

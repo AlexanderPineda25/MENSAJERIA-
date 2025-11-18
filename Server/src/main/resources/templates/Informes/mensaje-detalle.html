@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/main}">
+
+<head><title>Detalle Mensaje</title></head>
+
+<body>
+
+<section layout:fragment="titulo">
+    Detalle del Mensaje
+</section>
+
+<section layout:fragment="contenido">
+
+    <div th:if="${error != null}" class="alert alert-danger" th:text="${error}"></div>
+
+    <div th:if="${detalle != null}">
+
+        <ul class="list-group">
+            <li class="list-group-item"><b>ID:</b> <span th:text="${detalle.id}"></span></li>
+            <li class="list-group-item"><b>Remitente:</b> <span th:text="${detalle.remitente}"></span></li>
+            <li class="list-group-item"><b>Destinatario:</b> <span th:text="${detalle.destinatario}"></span></li>
+            <li class="list-group-item"><b>Contenido:</b> <span th:text="${detalle.contenido}"></span></li>
+            <li class="list-group-item">
+                <b>Fecha:</b>
+                <span th:text="${#temporals.format(detalle.fecha,'dd/MM/yyyy HH:mm')}"></span>
+            </li>
+            <li class="list-group-item"><b>Tipo:</b> <span th:text="${detalle.tipo}"></span></li>
+
+            <li class="list-group-item" th:if="${detalle.archivoNombre != null}">
+                <b>Archivo:</b><br>
+
+                <span th:text="${detalle.archivoNombre}"></span><br>
+                <span th:text="${detalle.archivoTamano}"></span> bytes
+
+                <br><br>
+
+                <a class="btn btn-primary btn-sm"
+                   th:href="@{'/informes/archivos/descargar/' + ${detalle.archivoId}}">
+                    Descargar archivo
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+</section>
+
+</body>
+</html>

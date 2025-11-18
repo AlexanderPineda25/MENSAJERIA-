@@ -1,0 +1,94 @@
+/* Fondo general */
+.api-body {
+    background: #0d1117;
+    color: #e6e6e6;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 30px;
+}
+
+/* Contenedor centrado */
+.api-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Título */
+.api-title {
+    text-align: center;
+    color: #58a6ff;
+    margin-bottom: 30px;
+}
+
+/* Panel general */
+.panel {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Botones estilo cyber */
+.btn-cyber {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-cyber:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+/* Colores */
+.bg-blue { background: #1877f2; }
+.bg-green { background: #00c851; }
+.bg-yellow { background: #ffbb33; }
+.bg-purple { background: #6f42c1; }
+
+/* Select */
+.select-cyber {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #e6e6e6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Errores */
+.panel-error {
+    background: #3b0d0d;
+    border: 1px solid #7d1c1c;
+    padding: 15px;
+    color: #ff6b6b;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Tarjeta de resultados */
+.card-result {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.card-header-custom {
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Tabla */
+.table-dark-custom thead {
+    background: #21262d !important;
+    color: #8b949e !important;
+}
+
+.table-dark-custom tbody tr:hover {
+    background: #30363d !important;
+}

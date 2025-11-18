@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Backend.Server.Controladores.DashboardController"
+            prefHeight="500" prefWidth="800">
+
+    <top>
+        <VBox alignment="CENTER" spacing="8">
+            <Label text="Panel del Servidor de Mensajería"
+                   style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+            <Label fx:id="statusLabel" text="Servidor Detenido"
+                   style="-fx-text-fill: red; -fx-font-size: 14px;"/>
+
+            <HBox alignment="CENTER" spacing="6">
+                <Label text="Puerto:"/>
+                <TextField fx:id="portField" promptText="9090" prefWidth="80"/>
+                <Button text="Iniciar Servidor" onAction="#onStartServer"
+                        style="-fx-background-color: #4CAF50; -fx-text-fill: white;"/>
+            </HBox>
+
+            <Label fx:id="portLabel" text="Puerto actual: -" style="-fx-font-size: 12px; -fx-text-fill: gray;"/>
+        </VBox>
+    </top>
+
+
+    <center>
+        <VBox spacing="8" alignment="TOP_CENTER">
+            <padding>
+                <Insets top="10" right="20" bottom="10" left="20"/>
+            </padding>
+
+            <Label fx:id="usersLabel" text="Usuarios conectados: 0"
+                   style="-fx-font-size: 12px;"/>
+            <Label fx:id="cpuLabel" text="CPU: 0%"
+                   style="-fx-font-size: 12px;"/>
+            <Label fx:id="ramLabel" text="RAM: 0%"
+                   style="-fx-font-size: 12px;"/>
+
+            <Label text="Logs:" style="-fx-font-weight: bold; -fx-font-size: 13px;"/>
+            <ScrollPane fitToWidth="true" prefHeight="180" style="-fx-border-color: lightgray;">
+                <content>
+                    <TextArea fx:id="logArea" wrapText="true" editable="false"
+                              style="-fx-font-family: 'Consolas'; -fx-font-size: 11px;"/>
+                </content>
+            </ScrollPane>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <padding>
+                <Insets top="8" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Reiniciar" onAction="#onRestart"
+                    style="-fx-background-color: orange; -fx-font-size: 12px; -fx-padding: 5 15 5 15;"/>
+            <Button text="Apagar" onAction="#onShutdown"
+                    style="-fx-background-color: red; -fx-text-fill: white; -fx-font-size: 12px; -fx-padding: 5 15 5 15;"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

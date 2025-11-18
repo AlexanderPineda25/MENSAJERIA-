@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/main}">
+
+<head>
+    <title>Usuario Más Activo</title>
+</head>
+
+<body>
+
+<section layout:fragment="titulo">
+    Usuario Más Activo
+</section>
+
+<section layout:fragment="contenido">
+
+    <div th:if="${topUsuario == null}" class="alert alert-warning">
+        No hay datos disponibles.
+    </div>
+
+    <table th:if="${topUsuario != null}" class="table table-bordered mt-3">
+        <thead>
+        <tr>
+            <th>Usuario</th>
+            <th>Total de Mensajes</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${topUsuario[0]}"></td>
+            <td th:text="${topUsuario[1]}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+</body>
+</html>

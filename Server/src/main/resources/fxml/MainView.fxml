@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Backend.Server.Controladores.MainViewController"
+            prefHeight="600" prefWidth="900">
+
+    <top>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Dashboard" fx:id="tabDashboard"/>
+                <Tab text="Informes" fx:id="tabInformes"/>
+                <Tab text="Usuarios Pendientes" fx:id="tabUsuarios"/>
+                <Tab text="Servicios Web" fx:id="tabServiciosWeb"/>
+                <Tab text="Límites" fx:id="tabLimites"/>
+            </tabs>
+        </TabPane>
+    </top>
+
+    <center>
+        <StackPane fx:id="contentPane"/>
+    </center>
+</BorderPane>

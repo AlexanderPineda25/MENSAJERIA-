@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="frontend.client.Controllers.UserListController"
+            style="-fx-background-color: #ecf0f1;">
+
+    <!-- HEADER -->
+    <top>
+        <VBox style="-fx-background-color: #2c3e50; -fx-padding: 15;">
+            <Label text="Listado de Usuarios"
+                   textFill="white"
+                   style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+        </VBox>
+    </top>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <center>
+        <VBox spacing="10" style="-fx-padding: 15;">
+            <!-- FILA DE FILTROS Y BÚSQUEDA -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <TextField fx:id="txtBuscar"
+                           promptText="Buscar por usuario, email o IP..."
+                           HBox.hgrow="ALWAYS"
+                           style="-fx-background-color: white; -fx-background-radius: 20; -fx-padding: 8;"/>
+                <ComboBox fx:id="cmbFiltro"
+                          prefWidth="150"
+                          style="-fx-background-color: white; -fx-background-radius: 20; -fx-padding: 5;"/>
+                <Button fx:id="btnRefrescar"
+                        text="🔄 Refrescar"
+                        onAction="#handleRefrescar"
+                        style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-background-radius: 20; -fx-padding: 8 15; -fx-font-weight: bold;"/>
+            </HBox>
+
+            <!-- TABLA DE USUARIOS -->
+            <TableView fx:id="tableUsuarios"
+                       VBox.vgrow="ALWAYS"
+                       style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5;">
+                <columns>
+                    <TableColumn fx:id="colUsername" text="Usuario" prefWidth="150"/>
+                    <TableColumn fx:id="colEstado" text="Estado" prefWidth="120"/>
+                    <TableColumn fx:id="colIP" text="Dirección IP" prefWidth="150"/>
+                    <TableColumn fx:id="colConexion" text="Última Conexión" prefWidth="180"/>
+                    <TableColumn fx:id="colMensajes" text="Total Mensajes" prefWidth="120"/>
+                </columns>
+            </TableView>
+
+            <!-- ESTADÍSTICAS -->
+            <HBox spacing="30" alignment="CENTER_LEFT" style="-fx-padding: 10 0 0 0;">
+                <Label fx:id="lblTotal" text="Total: 0" style="-fx-font-weight: bold; -fx-font-size: 13px;"/>
+                <Label fx:id="lblConectados" text="🟢 Conectados: 0" style="-fx-font-size: 13px;"/>
+                <Label fx:id="lblDesconectados" text="⚫ Desconectados: 0" style="-fx-font-size: 13px;"/>
+            </HBox>
+
+            <!-- BOTONES DE ACCIÓN -->
+            <HBox spacing="15" alignment="CENTER_RIGHT">
+                <Button fx:id="btnVerDetalles"
+                        text="Ver Detalles"
+                        onAction="#handleVerDetalles"
+                        disable="true"
+                        style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-background-radius: 20; -fx-padding: 8 20; -fx-font-weight: bold;"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

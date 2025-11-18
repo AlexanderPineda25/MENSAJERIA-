@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{layout/main :: layout(~{::body})}">
+
+<body>
+<div class="container mt-4">
+
+    <h2 class="mb-4">Detalle de Usuario</h2>
+
+    <!-- Información general -->
+    <div class="card mb-4">
+        <div class="card-header">Información General</div>
+        <div class="card-body">
+            <p><strong>Usuario:</strong> <span th:text="${info.username}"></span></p>
+            <p><strong>Mensajes enviados:</strong> <span th:text="${info.mensajesEnviados}"></span></p>
+            <p><strong>Mensajes recibidos:</strong> <span th:text="${info.mensajesRecibidos}"></span></p>
+            <p><strong>Última conexión:</strong>
+                <span th:text="${#temporals.format(info.ultimaConexion, 'dd/MM/yyyy HH:mm')}"></span>
+            </p>
+            <p><strong>Estado:</strong>
+                <span th:text="${info.conectado} ? 'Conectado' : 'Desconectado'"></span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Mensajes enviados -->
+    <h4>Mensajes Enviados</h4>
+    <table class="table table-bordered mb-5">
+        <thead>
+        <tr>
+            <th>IP Origen</th>
+            <th>IP Destino</th>
+            <th>Fecha</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="m : ${enviados}">
+            <td th:text="${m.ipOrigen}"></td>
+            <td th:text="${m.ipDestino}"></td>
+            <td th:text="${#temporals.format(m.fechaHora, 'dd/MM/yyyy HH:mm')}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- Mensajes recibidos -->
+    <h4>Mensajes Recibidos</h4>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>IP Origen</th>
+            <th>IP Destino</th>
+            <th>Fecha</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="m : ${recibidos}">
+            <td th:text="${m.ipOrigen}"></td>
+            <td th:text="${m.ipDestino}"></td>
+            <td th:text="${#temporals.format(m.fechaHora, 'dd/MM/yyyy HH:mm')}"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <a class="btn btn-secondary mt-4" href="/informes/usuarios">Volver</a>
+
+</div>
+</body>
+</html>

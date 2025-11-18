@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/main}">
+
+<head><title>Mensajes</title></head>
+
+<body>
+
+<section layout:fragment="titulo">
+    Mensajes
+</section>
+
+<section layout:fragment="contenido">
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Remitente</th>
+            <th>Destinatario</th>
+            <th>Tipo</th>
+            <th>Fecha</th>
+            <th>Detalle</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="m : ${mensajes}">
+            <td th:text="${m.id}"></td>
+            <td th:text="${m.remitente}"></td>
+            <td th:text="${m.destinatario}"></td>
+            <td th:text="${m.tipo}"></td>
+            <td th:text="${#temporals.format(m.fecha,'dd/MM/yyyy HH:mm')}"></td>
+            <td>
+                <a th:href="@{'/informes/mensajes/' + ${m.id}}" class="btn btn-sm btn-primary">
+                    Ver
+                </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+</body>
+</html>

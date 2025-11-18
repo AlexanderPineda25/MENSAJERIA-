@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{/layout/main}">
+
+<head>
+    <title>Archivos Enviados</title>
+</head>
+
+<body>
+
+<section layout:fragment="titulo">
+    Archivos enviados (ordenados por tamaño)
+</section>
+
+<section layout:fragment="contenido">
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+
+            <table class="table table-hover">
+                <thead class="table-dark">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Tamaño</th>
+                    <th>Fecha</th>
+                    <th>Propietario</th>
+                    <th>Acciones</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr th:each="a : ${archivos}">
+                    <td th:text="${a.nombre}"></td>
+                    <td th:text="${a.tamano}"></td>
+                    <td th:text="${#temporals.format(a.fecha,'dd/MM/yyyy HH:mm')}"></td>
+                    <td th:text="${a.propietario}"></td>
+
+                    <td>
+                        <a class="btn btn-primary btn-sm"
+                           th:href="@{'/informes/archivos/descargar/' + ${a.id}}">Descargar</a>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</section>
+
+</body>
+</html>
